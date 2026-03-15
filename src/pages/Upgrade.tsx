@@ -157,7 +157,6 @@ const Upgrade = () => {
                   { label: "Surveys per day", value: pkg.surveys },
                   { label: "Earnings per month", value: `Ksh ${pkg.earningsMonth.toLocaleString()}` },
                   { label: "Daily income", value: `Ksh ${pkg.dailyIncome.toLocaleString()}` },
-                  { label: "Minimum withdrawals", value: `Ksh ${pkg.minWithdraw.toLocaleString()}` },
                   { label: "Earnings per survey", value: pkg.earningsSurvey },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-2">
