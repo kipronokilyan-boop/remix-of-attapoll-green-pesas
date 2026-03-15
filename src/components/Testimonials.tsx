@@ -6,7 +6,7 @@ const testimonials = [
     name: "Jane from Nairobi",
     img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=80&q=80",
     stars: 5,
-    text: "AttapollClickPesa is amazing! I earn Ksh 2,000 weekly from short surveys, and M-Pesa payouts are instant!",
+    text: "SurveyissPay is amazing! I earn Ksh 2,000 weekly from short surveys, and M-Pesa payouts are instant!",
   },
   {
     name: "Peter from Mombasa",

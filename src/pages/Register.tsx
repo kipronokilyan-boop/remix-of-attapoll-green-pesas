@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { BarChart3, Eye, EyeOff } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
+import logo from "@/assets/logo.png";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -78,9 +79,9 @@ const Register = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-6">
-            <BarChart3 className="h-8 w-8 text-primary" />
+            <img src={logo} alt="SurveyissPay" className="h-8 w-8 rounded" />
             <span className="font-display text-2xl font-bold text-primary">
-              AttapollClickPesa
+              SurveyissPay
             </span>
           </div>
           <h1 className="font-display text-3xl font-bold text-gradient-green">Register</h1>

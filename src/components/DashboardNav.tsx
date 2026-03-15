@@ -1,6 +1,6 @@
-import { BarChart3 } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAuth } from "@/contexts/AuthContext";
+import logo from "@/assets/logo.png";
 
 const DashboardNav = () => {
   const location = useLocation();
@@ -21,9 +21,9 @@ const DashboardNav = () => {
     <nav className="sticky top-0 z-50 gradient-green">
       <div className="container mx-auto flex items-center gap-6 px-4 py-3">
         <div className="flex items-center gap-2">
-          <BarChart3 className="h-6 w-6 text-primary-foreground" />
+          <img src={logo} alt="SurveyissPay" className="h-7 w-7 rounded" />
           <span className="font-display text-lg font-bold text-primary-foreground">
-            SURVEY
+            SurveyissPay
           </span>
         </div>
         {links.map((l) => (
