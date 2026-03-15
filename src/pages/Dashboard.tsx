@@ -487,6 +487,24 @@ const Dashboard = () => {
   const [completedSurveyIds, setCompletedSurveyIds] = useState<number[]>([]);
   const [notifications, setNotifications] = useState<{ id: number; name: string; phone: string; location: string; amount: number }[]>([]);
 
+  // Ensure user_account record exists (create if missing)
+  useEffect(() => {
+    const ensureAccount = async () => {
+      if (user && !account) {
+        await supabase.from("user_accounts").upsert({
+          user_id: user.id,
+          phone_number: user.id,
+          account_type: "free",
+          surveys_per_day: 1,
+          min_withdrawal: 0,
+          balance: 0,
+        }, { onConflict: "user_id" });
+        await refreshAccount();
+      }
+    };
+    ensureAccount();
+  }, [user, account]);
+
   // Sync surveys completed today from account data
   useEffect(() => {
     if (account) {
