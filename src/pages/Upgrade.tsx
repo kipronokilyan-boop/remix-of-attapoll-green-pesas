@@ -15,10 +15,12 @@ import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/contexts/AuthContext";
 
 const packages = [
-  { name: "Business Basic", key: "basic", price: 200, surveys: 10, earningsMonth: 8000, dailyIncome: 250, minWithdraw: 3000, earningsSurvey: "Ksh 50 - 100" },
-  { name: "Business Premium", key: "premium", price: 400, surveys: 15, earningsMonth: 15000, dailyIncome: 500, minWithdraw: 2500, earningsSurvey: "Ksh 50 - 100" },
-  { name: "Business Expert", key: "expert", price: 800, surveys: 20, earningsMonth: 30000, dailyIncome: 1500, minWithdraw: 2000, earningsSurvey: "Ksh 50 - 100" },
-  { name: "PLATINUM", key: "platinum", price: 1200, surveys: 40, earningsMonth: 60000, dailyIncome: 3000, minWithdraw: 1000, earningsSurvey: "Ksh 100 - 150" },
+  { name: "Business Basic", key: "basic", price: 200, surveys: 10, earningsMonth: 8000, dailyIncome: 250, earningsSurvey: "Ksh 50 - 100" },
+  { name: "Business Premium", key: "premium", price: 400, surveys: 15, earningsMonth: 15000, dailyIncome: 500, earningsSurvey: "Ksh 50 - 100" },
+  { name: "Business Expert", key: "expert", price: 800, surveys: 20, earningsMonth: 30000, dailyIncome: 1500, earningsSurvey: "Ksh 50 - 100" },
+  { name: "PLATINUM", key: "platinum", price: 1200, surveys: 40, earningsMonth: 60000, dailyIncome: 3000, earningsSurvey: "Ksh 100 - 150" },
+  { name: "DIAMOND", key: "diamond", price: 2000, surveys: 60, earningsMonth: 90000, dailyIncome: 4500, earningsSurvey: "Ksh 100 - 200" },
+  { name: "ELITE", key: "elite", price: 3500, surveys: 80, earningsMonth: 150000, dailyIncome: 7500, earningsSurvey: "Ksh 150 - 250" },
 ];
 
 type PaymentState = 'idle' | 'sending' | 'waiting' | 'success' | 'failed';
