@@ -1,7 +1,1 @@
-project_id = "wjkmrqlbfsbddmvpflza"
-
-[functions.lipwa-stk-push]
-verify_jwt = false
-
-[functions.lipwa-callback]
-verify_jwt = false
+project_id = "fxskfcamsqtifwnwrqqb"
