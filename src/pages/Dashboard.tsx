@@ -254,6 +254,127 @@ const surveys = [
       { q: "Would you pay for improved sanitation services?", options: ["Yes", "Depends on cost", "Probably not", "No"] },
     ],
   },
+  {
+    id: 21, name: "Kenyan Politics & Governance", questions: 7, payout: 92,
+    questionList: [
+      { q: "Did you vote in the last general election?", options: ["Yes", "No, wasn't registered", "No, chose not to", "Was underage"] },
+      { q: "How satisfied are you with your county government?", options: ["Very satisfied", "Somewhat satisfied", "Dissatisfied", "Very dissatisfied"] },
+      { q: "What is the biggest governance issue in Kenya?", options: ["Corruption", "Unemployment", "Healthcare", "Education"] },
+      { q: "Do you trust the IEBC?", options: ["Yes, fully", "Somewhat", "Not really", "Not at all"] },
+      { q: "How do you get political news?", options: ["TV", "Social media", "Radio", "Newspapers"] },
+      { q: "Do you think devolution has worked?", options: ["Yes, very well", "Somewhat", "Not really", "Failed completely"] },
+      { q: "Would you consider running for office?", options: ["Yes", "Maybe someday", "Unlikely", "Never"] },
+    ],
+  },
+  {
+    id: 22, name: "Kenyan Tourism Insights", questions: 8, payout: 105,
+    questionList: [
+      { q: "Have you visited a national park/reserve?", options: ["Yes, multiple", "Once or twice", "Plan to", "Never"] },
+      { q: "Which tourist destination would you visit?", options: ["Maasai Mara", "Diani Beach", "Mount Kenya", "Lamu Island"] },
+      { q: "How much would you spend on a local holiday?", options: ["Under Ksh 10,000", "Ksh 10,000-30,000", "Ksh 30,000-50,000", "Over Ksh 50,000"] },
+      { q: "Do you think domestic tourism is affordable?", options: ["Yes", "Somewhat", "Too expensive", "Never thought about it"] },
+      { q: "What stops you from travelling more?", options: ["Money", "Time off work", "Family obligations", "Nothing, I travel often"] },
+      { q: "Have you used any travel booking apps?", options: ["Yes, frequently", "A few times", "Once", "Never"] },
+      { q: "Would you host tourists via Airbnb?", options: ["Already do", "Considering it", "Maybe", "No"] },
+      { q: "What type of holiday do you prefer?", options: ["Beach", "Safari", "City break", "Adventure/Hiking"] },
+    ],
+  },
+  {
+    id: 23, name: "Freelancing & Gig Economy", questions: 7, payout: 88,
+    questionList: [
+      { q: "Do you do freelance or gig work?", options: ["Yes, full-time", "Yes, part-time", "Occasionally", "No"] },
+      { q: "What type of freelance work do you do?", options: ["Writing/Content", "Design/Creative", "Tech/Development", "Driving/Delivery"] },
+      { q: "Which platform do you use for gigs?", options: ["Upwork/Fiverr", "WhatsApp groups", "Social media", "Local networks"] },
+      { q: "How much do you earn monthly from gigs?", options: ["Under Ksh 5,000", "Ksh 5,000-20,000", "Ksh 20,000-50,000", "Over Ksh 50,000"] },
+      { q: "What's the biggest challenge in freelancing?", options: ["Finding clients", "Late payments", "Inconsistent income", "No benefits/insurance"] },
+      { q: "Do you pay taxes on gig income?", options: ["Yes, always", "Sometimes", "Don't know how", "No"] },
+      { q: "Would you prefer a formal job over freelancing?", options: ["Yes, definitely", "Depends on the job", "No, I prefer freedom", "Already have both"] },
+    ],
+  },
+  {
+    id: 24, name: "Parenting in Kenya", questions: 8, payout: 98,
+    questionList: [
+      { q: "How many children do you have?", options: ["None", "1-2", "3-4", "5+"] },
+      { q: "What type of school do your children attend?", options: ["Public", "Private", "Homeschool", "N/A"] },
+      { q: "How much do you spend on school fees per term?", options: ["Under Ksh 10,000", "Ksh 10,000-30,000", "Ksh 30,000-80,000", "Over Ksh 80,000"] },
+      { q: "What is your biggest parenting challenge?", options: ["School fees", "Screen time", "Discipline", "Work-life balance"] },
+      { q: "Do your children use smartphones?", options: ["Yes, their own", "Yes, shared device", "Limited access", "No"] },
+      { q: "How do you monitor your children online?", options: ["Parental controls", "Check their phone", "Talk to them about it", "Don't monitor"] },
+      { q: "Do you save for your children's future?", options: ["Yes, education fund", "Yes, general savings", "Want to but can't", "No"] },
+      { q: "What extracurricular activities for your kids?", options: ["Sports", "Music/Art", "Academic tutoring", "None"] },
+    ],
+  },
+  {
+    id: 25, name: "E-commerce & Digital Trade", questions: 7, payout: 78,
+    questionList: [
+      { q: "Do you sell anything online?", options: ["Yes, full-time business", "Yes, side hustle", "Planning to start", "No"] },
+      { q: "Which platform do you sell on?", options: ["Instagram/Facebook", "Jumia/Kilimall", "Own website", "WhatsApp"] },
+      { q: "What do you sell?", options: ["Fashion/Clothing", "Food/Beverages", "Electronics", "Services"] },
+      { q: "How do you handle deliveries?", options: ["Personal delivery", "Courier services", "Pick-up points", "Digital products only"] },
+      { q: "What's your biggest challenge selling online?", options: ["Getting customers", "Competition", "Delivery logistics", "Trust issues"] },
+      { q: "Do you advertise your business online?", options: ["Yes, paid ads", "Organic posts only", "Word of mouth", "No marketing"] },
+      { q: "Monthly revenue from online sales?", options: ["Under Ksh 10,000", "Ksh 10,000-50,000", "Ksh 50,000-200,000", "Over Ksh 200,000"] },
+    ],
+  },
+  {
+    id: 26, name: "Kenyan Music & Culture", questions: 6, payout: 60,
+    questionList: [
+      { q: "What Kenyan music genre do you enjoy most?", options: ["Gengetone", "Benga", "Gospel", "Afro-pop"] },
+      { q: "Do you support local artists by buying music?", options: ["Yes, streaming", "Buy merchandise", "Attend concerts", "No"] },
+      { q: "Which Kenyan cultural festival have you attended?", options: ["Lamu Festival", "Turkana Festival", "Blankets & Wine", "None"] },
+      { q: "Do you speak your mother tongue fluently?", options: ["Yes", "Somewhat", "A few words", "No"] },
+      { q: "How important is preserving Kenyan culture?", options: ["Very important", "Important", "Somewhat", "Not important"] },
+      { q: "Do you consume Kenyan-made movies/series?", options: ["Yes, regularly", "Sometimes", "Rarely", "Never"] },
+    ],
+  },
+  {
+    id: 27, name: "Renewable Energy Adoption", questions: 7, payout: 85,
+    questionList: [
+      { q: "Do you use solar energy at home?", options: ["Yes, full solar", "Solar + grid", "Plan to install", "No"] },
+      { q: "What is your monthly electricity bill?", options: ["Under Ksh 1,000", "Ksh 1,000-3,000", "Ksh 3,000-5,000", "Over Ksh 5,000"] },
+      { q: "How often do you experience power outages?", options: ["Daily", "Weekly", "Monthly", "Rarely"] },
+      { q: "Would you invest in a home solar system?", options: ["Already have", "Yes, if affordable", "Maybe", "No"] },
+      { q: "Do you use energy-saving bulbs?", options: ["Yes, all bulbs", "Most bulbs", "A few", "No"] },
+      { q: "How do you charge your phone when power is out?", options: ["Solar charger", "Power bank", "Go elsewhere", "Wait for power"] },
+      { q: "Do you know about KPLC prepaid meters?", options: ["Yes, I use one", "Know about it", "Heard of it", "No"] },
+    ],
+  },
+  {
+    id: 28, name: "Pet Ownership in Kenya", questions: 6, payout: 52,
+    questionList: [
+      { q: "Do you own a pet?", options: ["Yes, dog", "Yes, cat", "Yes, other", "No"] },
+      { q: "How much do you spend on your pet monthly?", options: ["Under Ksh 1,000", "Ksh 1,000-3,000", "Ksh 3,000-5,000", "Don't have a pet"] },
+      { q: "Do you take your pet to a vet regularly?", options: ["Yes, annually", "When sick only", "Rarely", "N/A"] },
+      { q: "Where did you get your pet?", options: ["Adopted/rescued", "Bought from breeder", "Gift", "Stray that stayed"] },
+      { q: "Would you buy pet insurance?", options: ["Yes", "Maybe", "Probably not", "No"] },
+      { q: "Do you think Kenya needs more animal shelters?", options: ["Definitely", "Probably", "Not sure", "No"] },
+    ],
+  },
+  {
+    id: 29, name: "Matatu Industry Survey", questions: 7, payout: 72,
+    questionList: [
+      { q: "How often do you use matatus?", options: ["Daily", "A few times a week", "Occasionally", "Never"] },
+      { q: "What route do you use most?", options: ["CBD to estates", "Long distance", "Within town", "Rural routes"] },
+      { q: "How much do you spend on matatu fare daily?", options: ["Under Ksh 100", "Ksh 100-200", "Ksh 200-400", "Over Ksh 400"] },
+      { q: "What frustrates you most about matatus?", options: ["Reckless driving", "Overcharging", "Loud music", "Overcrowding"] },
+      { q: "Do you use cashless matatu payment?", options: ["Yes, always", "Sometimes", "Rarely", "Cash only"] },
+      { q: "Should matatus be replaced by buses?", options: ["Yes, completely", "Partially", "No, improve matatus", "Don't care"] },
+      { q: "Do you feel safe in matatus?", options: ["Always", "Usually", "Sometimes", "Never"] },
+    ],
+  },
+  {
+    id: 30, name: "Mental Health Awareness", questions: 8, payout: 115,
+    questionList: [
+      { q: "How would you describe your stress levels?", options: ["Very low", "Manageable", "High", "Overwhelming"] },
+      { q: "Have you ever sought professional mental health help?", options: ["Yes, currently", "Yes, in the past", "Considered it", "Never"] },
+      { q: "What is your biggest source of stress?", options: ["Finances", "Work/Career", "Relationships", "Health"] },
+      { q: "Do you think mental health stigma exists in Kenya?", options: ["Yes, very much", "Somewhat", "It's improving", "Not really"] },
+      { q: "How do you cope with stress?", options: ["Exercise", "Talking to someone", "Prayer/Meditation", "Social media/Entertainment"] },
+      { q: "Would you use a mental health app?", options: ["Yes, definitely", "Maybe", "Probably not", "No"] },
+      { q: "Can you afford therapy sessions?", options: ["Yes", "If subsidized", "Too expensive", "Don't believe in therapy"] },
+      { q: "Should employers provide mental health support?", options: ["Yes, mandatory", "Yes, optional", "Not their responsibility", "Don't know"] },
+    ],
+  },
 ];
 
 const packageLimits: Record<string, { surveys: number; minWithdraw: number; name: string }> = {
@@ -262,6 +383,8 @@ const packageLimits: Record<string, { surveys: number; minWithdraw: number; name
   premium: { surveys: 15, minWithdraw: 2500, name: "Business Premium" },
   expert: { surveys: 20, minWithdraw: 2000, name: "Business Expert" },
   platinum: { surveys: 40, minWithdraw: 1000, name: "PLATINUM" },
+  diamond: { surveys: 60, minWithdraw: 500, name: "DIAMOND" },
+  elite: { surveys: 80, minWithdraw: 200, name: "ELITE" },
 };
 
 const SurveyModal = ({ survey, onClose, onComplete }: { survey: typeof surveys[0]; onClose: () => void; onComplete: () => void }) => {
