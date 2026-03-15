@@ -31,9 +31,9 @@ const Login = () => {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-2 mb-6">
-            <BarChart3 className="h-8 w-8 text-primary" />
+            <img src={logo} alt="SurveyissPay" className="h-8 w-8 rounded" />
             <span className="font-display text-2xl font-bold text-primary">
-              AttapollClickPesa
+              SurveyissPay
             </span>
           </div>
           <h1 className="font-display text-3xl font-bold text-gradient-green">Login</h1>

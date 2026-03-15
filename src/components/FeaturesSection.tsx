@@ -20,7 +20,7 @@ const FeaturesSection = () => {
           viewport={{ once: true }}
           className="font-display text-3xl md:text-4xl font-bold text-center text-gradient-green mb-14"
         >
-          Why Choose AttapollClickPesa?
+          Why Choose SurveyissPay?
         </motion.h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f, i) => (

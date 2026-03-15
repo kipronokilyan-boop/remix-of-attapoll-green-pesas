@@ -7,9 +7,9 @@ import {
 } from "@/components/ui/accordion";
 
 const faqs = [
-  { q: "Is it free to join AttapollClickPesa?", a: "Yes, joining AttapollClickPesa is completely free with no hidden fees." },
+  { q: "Is it free to join SurveyissPay?", a: "Yes, joining SurveyissPay is completely free with no hidden fees." },
   { q: "How do I get paid?", a: "You can cash out instantly via M-Pesa, PayPal, or gift cards with no minimum threshold." },
-  { q: "Are there any hidden fees?", a: "No, AttapollClickPesa has no hidden fees. You keep what you earn." },
+  { q: "Are there any hidden fees?", a: "No, SurveyissPay has no hidden fees. You keep what you earn." },
   { q: "How much can I earn?", a: "You can earn Ksh 500-3,000 daily, with top earners making up to Ksh 23,250 monthly through surveys and referrals." },
   { q: "Is my data safe?", a: "Absolutely. We use bank-level encryption and never share your personal data with third parties." },
 ];
