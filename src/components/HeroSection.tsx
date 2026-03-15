@@ -19,7 +19,7 @@ const HeroSection = () => {
               <span className="text-gradient-green">Your Opinions</span>
             </h1>
             <p className="text-muted-foreground text-lg mb-2">
-              Join the AttapollClickPesa survey panel
+              Join the SurveyissPay survey panel
             </p>
             <p className="text-muted-foreground text-lg mb-2">
               and earn up to <span className="text-primary font-semibold">Ksh 23,250</span> /month?
