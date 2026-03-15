@@ -522,7 +522,18 @@ const Dashboard = () => {
   const pkg = packageLimits[accountType] || packageLimits.free;
 
   const handleTakeSurvey = (survey: typeof surveys[0]) => {
-    const limit = account?.surveys_per_day || 1;
+    if (!account) {
+      // No account record yet, block surveys
+      setShowUpgradeModal(true);
+      return;
+    }
+    const limit = account.surveys_per_day || 1;
+    if (surveysCompletedToday >= limit) {
+      setShowUpgradeModal(true);
+      return;
+    }
+    setActiveSurvey(survey);
+  };
     if (surveysCompletedToday >= limit) {
       setShowUpgradeModal(true);
       return;
