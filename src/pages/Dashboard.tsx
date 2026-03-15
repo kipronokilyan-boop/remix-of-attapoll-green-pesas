@@ -446,12 +446,17 @@ const SurveyModal = ({ survey, onClose, onComplete }: { survey: typeof surveys[0
   );
 };
 
-const UpgradeModal = ({ onClose, onUpgrade }: { onClose: () => void; onUpgrade: () => void }) => (
+const UpgradeModal = ({ onClose, onUpgrade, accountType, limit }: { onClose: () => void; onUpgrade: () => void; accountType: string; limit: number }) => (
   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
     <div className="bg-card rounded-xl p-8 max-w-md w-full text-center space-y-4 shadow-card">
       <Lock className="h-16 w-16 text-primary mx-auto" />
       <h2 className="font-display text-2xl font-bold text-primary">Survey Limit Reached</h2>
-      <p className="text-muted-foreground">Free accounts can only complete <span className="text-primary font-bold">1 survey per day</span>. Upgrade your account to unlock more surveys and earn more!</p>
+      <p className="text-muted-foreground">
+        {accountType === "free" 
+          ? <>Free accounts can only complete <span className="text-primary font-bold">1 survey per day</span>. Upgrade your account to unlock more surveys and earn more!</>
+          : <>You've completed all <span className="text-primary font-bold">{limit} surveys</span> for today. Upgrade to a higher package to unlock more daily surveys!</>
+        }
+      </p>
       <div className="flex flex-col gap-2">
         <Button onClick={onUpgrade} className="gradient-green text-primary-foreground font-semibold">
           Upgrade Now
