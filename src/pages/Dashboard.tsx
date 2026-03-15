@@ -534,12 +534,6 @@ const Dashboard = () => {
     }
     setActiveSurvey(survey);
   };
-    if (surveysCompletedToday >= limit) {
-      setShowUpgradeModal(true);
-      return;
-    }
-    setActiveSurvey(survey);
-  };
 
   const handleSurveyComplete = async () => {
     if (!user || !account || !activeSurvey) return;
