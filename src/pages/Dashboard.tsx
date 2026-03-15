@@ -662,6 +662,8 @@ const Dashboard = () => {
         <UpgradeModal
           onClose={() => setShowUpgradeModal(false)}
           onUpgrade={() => { setShowUpgradeModal(false); navigate("/upgrade"); }}
+          accountType={accountType}
+          limit={pkg.surveys}
         />
       )}
 
