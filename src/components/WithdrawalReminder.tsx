@@ -33,7 +33,7 @@ const WithdrawalReminder = () => {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="bg-card border-border">
+      <DialogContent className="bg-card border-border w-[calc(100%-3rem)] max-w-sm rounded-xl">
         <DialogHeader>
           <div className="flex items-center gap-2 mb-2">
             <Wallet className="h-6 w-6 text-primary" />
