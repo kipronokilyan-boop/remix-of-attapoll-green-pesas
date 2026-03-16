@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import WithdrawalReminder from "@/components/WithdrawalReminder";
 import { Wallet, Tag, User, RefreshCw, Clock, CheckCircle2, HelpCircle, Banknote, Lock, ArrowUpCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -564,6 +565,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-background">
       <DashboardNav />
+      <WithdrawalReminder />
 
       {/* Fake earnings notifications */}
       <div className="fixed top-4 right-4 z-50 flex flex-col gap-2 pointer-events-none max-w-[220px]">

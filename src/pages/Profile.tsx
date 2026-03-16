@@ -50,7 +50,11 @@ const Profile = () => {
 
   const savePayment = async () => {
     if (!payForm.name || !payForm.provider || !payForm.number || !user) return;
-    await supabase.from("profiles").update({ phone_number: payForm.number }).eq("user_id", user.id);
+    const { error } = await supabase.from("profiles").update({ phone_number: payForm.number }).eq("user_id", user.id);
+    if (error) {
+      toast({ title: "Error", description: "Failed to save payment details.", variant: "destructive" });
+      return;
+    }
     await refreshProfile();
     setShowPaymentDialog(false);
     toast({ title: "Saved!", description: "Payment details updated." });
