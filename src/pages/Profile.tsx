@@ -50,7 +50,10 @@ const Profile = () => {
 
   const savePayment = async () => {
     if (!payForm.name || !payForm.provider || !payForm.number || !user) return;
-    const { error } = await supabase.from("profiles").update({ phone_number: payForm.number }).eq("user_id", user.id);
+    const { error, count } = await supabase
+      .from("profiles")
+      .update({ phone_number: payForm.number })
+      .eq("user_id", user.id);
     if (error) {
       toast({ title: "Error", description: "Failed to save payment details.", variant: "destructive" });
       return;
