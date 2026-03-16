@@ -11,6 +11,8 @@ const packageConfig: Record<string, { surveys_per_day: number; min_withdrawal: n
   premium: { surveys_per_day: 15, min_withdrawal: 2500 },
   expert: { surveys_per_day: 20, min_withdrawal: 2000 },
   platinum: { surveys_per_day: 40, min_withdrawal: 1000 },
+  diamond: { surveys_per_day: 60, min_withdrawal: 500 },
+  elite: { surveys_per_day: 80, min_withdrawal: 200 },
 };
 
 serve(async (req) => {
