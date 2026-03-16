@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import WithdrawalReminder from "@/components/WithdrawalReminder";
 import { Wallet, Tag, User, RefreshCw, Clock, CheckCircle2, HelpCircle, Banknote, Lock, ArrowUpCircle, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
